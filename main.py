@@ -21,4 +21,4 @@ def getName():
     return jsonify(json.loads(x)["age"])
 
 #app.run(host="localhost", port=8080, debug=True,ssl_context=('cert.pem', 'key.pem'))
-app.run(host="localhost", port=8080, debug=True)
+app.run(host="127.0.0.1", port=8080, debug=False,threaded=True)
